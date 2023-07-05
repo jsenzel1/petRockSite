@@ -26,6 +26,9 @@ function setup() {
     console.log(mySounds);
 
     console.log("HI2");
+
+    displayDate = new Date();   
+    document.getElementById("dateText").innerText=displayDate.toDateString() + "\n"+ date.toTimeString();
     
 }
 
@@ -40,7 +43,7 @@ function dateCalc(isManual, dlReady){
         }
     //date.setHours(date.getHours()+hourOffset);
 
-    document.getElementById("dateText").innerText=date.toDateString() + "\n"+ date.toTimeString();
+    //document.getElementById("dateText").innerText=date.toDateString() + "\n"+ date.toTimeString();
 
     const weekday= date.getDay().toString();
 
