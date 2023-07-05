@@ -23,15 +23,11 @@ function sound(src) {
 }
 
 function setup() {
-    console.log(mySounds);
-
-    console.log("HI2");
 
     displayDate = new Date();   
-    document.getElementById("dateText").innerText=displayDate.toDateString() + "\n"+ date.toTimeString();
+    document.getElementById("dateText").innerText=displayDate.toDateString() + "\n"+ displayDate.toTimeString();
     
 }
-
 
 function dateCalc(isManual, dlReady){
     
@@ -118,9 +114,6 @@ function dateCalc(isManual, dlReady){
     };
 }
 
-
-//dateCalc();
-
 function dlClickAuto(){
     
             dateCalc(false, function doDownlaod(blob){
@@ -182,5 +175,6 @@ function loadFile(filePath) {
   return result;
 }
 
+setup();
 
 
