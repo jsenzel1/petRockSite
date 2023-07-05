@@ -1,0 +1,170 @@
+@font-face {
+  font-family: 'bagnard';
+  src: url('bagnard-webfont.woff') format('woff'),
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+html, body,h1 {
+  margin: 0;
+  padding: 0;
+  line-height: 3;
+  font-family: "Georgia";
+  font-style: italic;
+  font-size: 1em;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+
+br{
+    display: block;
+    margin-bottom: 2em;
+}
+
+hr{
+    width:60%;
+    border: 2px solid black;
+    border-radius: 6px;
+    /*transform: skew(1.5deg, 1.6deg); */
+}
+
+button {
+  background-color:black; /* 78c9cf  */
+  border: none;
+  color: white;
+    
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-family: "bagnard";
+  
+  font-size: 2em;
+  transition: font-size 4s;
+  transition: font-style .2s;
+  transition: skew 2s;
+  font-style: normal;
+  border-radius:0%;
+  text-decoration: underline;
+    
+  --width: 100%;
+    flex: auto;
+  
+  
+}
+button:hover{
+     transition: font-size 4s;
+  transition: font-style .2s;
+    font-size: 2.5em;
+    font-style: italic;
+    transform: skew(7.5deg, 1.5deg);
+    
+    #background-color:#7ec5f8; /* 78c9cf  */
+  
+    border: none;
+
+}
+
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  font-family: "bagnard";
+  font-size: 1.2em;
+  font-style: normal;
+    
+  width: 60%;
+  margin: auto;
+  text-align: center;
+    
+}
+
+h1{
+    font-size: 3em;
+    line-height: 1.4
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-family: "Space Grotesk";
+  font-size: 2em;
+  font-style: italic;
+  font-weight: lighter;
+    
+  #background-color: #f9d0ab;
+  background-color: #000000;
+  color: white;
+  /* transform: skew(1.5deg, -1.5deg); */
+    
+    
+  width: 50%;
+  margin: auto;
+  text-align: center;
+    
+}
+
+h3{
+      margin: 0;
+  padding: 0;
+  line-height: 2;
+ 
+  font-size: 2em;
+  font-style: normal;
+    font-weight: 500;
+  
+    
+  #background-color: #ffcbdb;
+    
+  background-color: #000000;
+  color: white;
+    
+  /* transform: skew(7.5deg, 1.5deg); */
+    
+    
+  width: 50%;
+  margin: auto;
+  text-align: center;
+
+}
+
+canvas {
+  text-align: center;
+  display: block;
+}
+
+div{
+  text-align:center;
+
+  width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        /* background: #fff8bd; */
+  border-radius: 5%;
+
+}
+img{
+  /* display: block; */
+
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align:center;
+
+  
+  border-radius: 5%;
+  height: 87%;
+  display:inline-block; 
+  /* margin:5px 20px; */
+  padding:5px;
+
+  
+  }
+
+form{
+
+}

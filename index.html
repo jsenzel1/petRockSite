@@ -1,0 +1,115 @@
+<html lang="en">
+
+<head>
+    <meta charset="ISO-8859-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Space+Grotesk&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+ 
+    <br>
+    <h1>PET ROCK CLOCK SETTER/</h1>
+    
+    <h1>FIRMWARE UPDATE</h1>
+    
+    <br>
+    <hr>
+    <hr>
+
+    <p>updating firmware always also sets the internal clock<p>
+    <p>if you upload the same firmware version clock will still be set<p>
+
+
+    <hr>
+    <hr>
+    
+    <br>
+    <h3>CHECK THE BELOW DATE TO MAKE SURE IT'S CORRECT</h3>
+
+    <br>
+    <hr>
+    <hr>
+    <br>
+    
+    <h2 id='dateText'></h2>
+    
+    <br>
+    
+    <hr>
+    <hr>
+    
+    <br>
+    
+    <script src="main.js"></script>
+    
+    <button onclick="dlClickAuto()"> CLICK TO DOWNLOAD FIRMWARE </button>
+    <p>(automatic time setting)</p>
+    <br>
+    <hr>
+    <hr>
+    <br>
+    
+    <h3>How to update firmware/set clock:</h3>
+    <br>
+
+    
+    
+    <p>1. Unscrew module from eurorack case. it can still be connected to power cables, but turn your case off. the module can be powered just by using usb, so you can also take it out of the case entirely to perform the update. </p>
+   
+    <hr>
+    <br>
+    
+    <p>2. Locate the usb C port on the bottom right of the module circuit board, and the small button on the back of the module. While continuisly holding the button, plug the module into a computer with a usb c cable. Once its plugged in wait a second, then release the button. The module should now show up on your computer as a flash drive named 'RPI-RP2'</p>
+    <hr>
+    <br>
+    
+    <p>3. Find the firmware file you just downloaded, ending in '.uf2' drag this file onto the usb drive, and it will eject itself. The module will then boot with all lights on, showing the update was succesful. Then just turn it off and on and it will work like normal</p>
+    <hr>
+
+   
+ 
+    <br>
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    
+    <h1>OR, SET DATE MANUALLY</h1>
+    
+     <hr>
+    <hr>
+    <hr>
+    <hr>
+    
+    <p>(choose a date with the picker, then click download, don't download with blank date)</p>
+    <p>date must be between year 2020 and 2100</p>
+    
+   <form id="myForm" onsubmit="return false;">
+  <label for="birthday">Date:</label>
+  <input type="datetime-local" 
+         id="datepick" 
+         name="datepick"
+         min="2020-01-01T00:00"
+         max="2099-12-30T00:00" 
+         >
+  <!--input type="submit" onclick="getFormData()"-->
+</form>
+    
+    
+    <button onclick="dlClickManual()"> CLICK TO DOWNLOAD FIRMWARE </button>
+    <p>(manual time setting)</p>
+    
+    <br>
+    
+</body>
+
+</html>
