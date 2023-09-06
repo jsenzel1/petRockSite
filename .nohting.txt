@@ -1,0 +1,25 @@
+    <h1>PET ROCK SECRET TIME MACHINE</h1>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <p>(choose a date with the picker, then click download, don't download with blank date)</p>
+    <p>date must be between year 2020 and 2100</p>
+
+   <form id="myForm" onsubmit="return false;">
+  <label for="birthday">Date:</label>
+  <input type="datetime-local"
+         id="datepick"
+         name="datepick"
+         min="2020-01-01T00:00"
+         max="2099-12-30T00:00"
+         >
+</form>
+
+
+    <button onclick="dlClickManual()"> CLICK TO DOWNLOAD FIRMWARE </button>
+    <p>(time machine setting)</p>
+
+    <br>

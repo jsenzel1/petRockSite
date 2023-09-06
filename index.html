@@ -61,7 +61,6 @@
     <br>
 
     
-    
     <p>1. Unscrew module from eurorack case. it can still be connected to power cables, but turn your case off. the module can be powered just by using usb, so you can also take it out of the case entirely to perform the update. </p>
    
     <hr>
@@ -73,43 +72,15 @@
     
     <p>3. Find the firmware file you just downloaded, ending in '.uf2' drag this file onto the usb drive, and it will eject itself. The module will then boot with all lights on, showing the update was succesful. Then just turn it off and on and it will work like normal</p>
     <hr>
-
+    <br>
+    <p> note: in order to set the clock, you need to download a fresh copy of the firmware. When you download the firmware, the current time is embedded inside of it which is copied to the module when you boot it (so don't wait more than a minute or two after downloading the firmware to upload it to the module.</p> 
+    
+    <hr>
    
  
     <br>
-    <hr>
-    <hr>
-    <hr>
-    <hr>
 
-    
-    <h1>PET ROCK SECRET TIME MACHINE</h1>
-    
-     <hr>
-    <hr>
-    <hr>
-    <hr>
-    
-    <p>(choose a date with the picker, then click download, don't download with blank date)</p>
-    <p>date must be between year 2020 and 2100</p>
-    
-   <form id="myForm" onsubmit="return false;">
-  <label for="birthday">Date:</label>
-  <input type="datetime-local" 
-         id="datepick" 
-         name="datepick"
-         min="2020-01-01T00:00"
-         max="2099-12-30T00:00" 
-         >
-  <!--input type="submit" onclick="getFormData()"-->
-</form>
-    
-    
-    <button onclick="dlClickManual()"> CLICK TO DOWNLOAD FIRMWARE </button>
-    <p>(time machine setting)</p>
-    
-    <br>
-    
+
 </body>
 
 </html>
